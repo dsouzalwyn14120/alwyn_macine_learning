@@ -34,7 +34,7 @@ with st.sidebar:
   sex= st.selectbox("Sex",("male","female"))
   bill_length_mm= st.slider("Bill Length(mm)",df["bill_length_mm"].min(),df["bill_length_mm"].max(),df["bill_length_mm"].mean())
   bill_depth_mm= st.slider("Bill depth(mm)", df["bill_depth_mm"].min(), df["bill_depth_mm"].max(), df["bill_depth_mm"].min())
-  flipper_length_mm= st.slider("Flipper length(mm)", df["flipper_length_mm"],df["flipper_length_mm"].min(), df["flipper_length_mm"].max(), df["flipper_length_mm"].mean())
+  flipper_length_mm= st.slider("Flipper length(mm)",df["flipper_length_mm"].min(), df["flipper_length_mm"].max(), df["flipper_length_mm"].mean())
 
 
 # cols= df.columns
