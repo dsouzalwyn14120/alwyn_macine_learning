@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd 
+from sklear.ensemble import RandomForestClassifier
 
 #reading the penguins_cleaned.csv file using the raw link
 df= pd.read_csv("https://raw.githubusercontent.com/dsouzalwyn14120/data/refs/heads/master/penguins_cleaned.csv")
@@ -71,4 +72,15 @@ with st.expander("**New input feature**"):
 from sklearn.preprocessing import LabelEncoder
 encoder= LabelEcoder()
 Y=encoder.fit_transform(Y)
+
+
+#Model trainning 
+
+clf= RandomForestClassifier()
+clf.fit(combined_df[1:],Y)
+
+#apply the model
+prediction= clf.predict(input_row)
+prediction
+
 
