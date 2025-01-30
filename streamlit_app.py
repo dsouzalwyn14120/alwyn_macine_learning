@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd 
-from sklear.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier
 
 #reading the penguins_cleaned.csv file using the raw link
 df= pd.read_csv("https://raw.githubusercontent.com/dsouzalwyn14120/data/refs/heads/master/penguins_cleaned.csv")
