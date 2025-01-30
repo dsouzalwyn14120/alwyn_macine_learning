@@ -11,3 +11,9 @@ st.info('in this app we build a Machine Learning model!') #this is used to print
 with st.expander("data"):
   st.write("**Raw Data**")
   df
+  X= df.drop(["species"],axis=1)
+  X
+
+  st.write("**Y**")
+  Y= df.species
+  Y
