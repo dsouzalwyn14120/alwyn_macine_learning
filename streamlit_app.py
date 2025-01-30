@@ -51,6 +51,10 @@ with st.sidebar:
 encode_cols=["sex","island"]
 combined_df= pd.get_dummies(combined_df, prefix=encode_cols)
 input_row=combined_df[:1]
+from sklearn.preprocessing import LabelEncoder
+encoder= LabelEcoder()
+Y=encoder.fit_transform(Y)
+
 
 with st.expander("**New input feature**"):
   st.write("input feature")
@@ -59,11 +63,12 @@ with st.expander("**New input feature**"):
   combined_df
   st.write("input row encoded")
   input_row
+  st.write("Y")
+  Y
   
 #encode Y
 
 from sklearn.preprocessing import LabelEncoder
 encoder= LabelEcoder()
 Y=encoder.fit_transform(Y)
-  Y
 
