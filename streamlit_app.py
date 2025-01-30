@@ -23,6 +23,6 @@ with st.expander("data"):
 
   # adding some data visualization to the same application
 
-  with  st.expander("**Data Visualization**"):
-    st.write("**Bill legth V/S Body mass**")
-    st.scatter_chart(data=df, x="bill_length_mm", y="body_mass_g", color ="species" )
+with  st.expander("**Data Visualization**"):
+  st.write("**Bill legth V/S Body mass**")
+  st.scatter_chart(data=df, x="bill_length_mm", y="body_mass_g", color ="species" )
