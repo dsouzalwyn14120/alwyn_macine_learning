@@ -29,10 +29,16 @@ with  st.expander("**Data Visualization**"):
 
 with st.sidebar:
   st.header("Input Features")
+  species= st.selectbox("Species",('Adelie' 'Gentoo' 'Chinstrap'))
+  island= st.selectbox("Island",('Torgersen' 'Biscoe' 'Dream'))
+  sex= st.selectbox("Sex",("male","female"))
+  bill_length_mm= st.slider("Bill Length(mm)",32.1,59.6, 42.9)
 
 
-cols= df.columns
-cols
+# cols= df.columns
+# cols
 
-for col in cols:
-  st.write(f"Column name:{col}\n\n {df[col].unique()}")
+# for col in cols:
+  # st.write(f"Column name:{col}\n\n {df[col].unique()}")
+
+
