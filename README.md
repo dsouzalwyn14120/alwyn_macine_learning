@@ -1,9 +1,8 @@
-# 📦 Streamlit App Starter Kit 
+# Machine learnig app 🤖
 ```
 ⬆️ (Replace above with your app's name)
 ```
-
-Description of the app ...
+creating a streamlit web application interface for a ML algorithm!
 
 ## Demo App
 
