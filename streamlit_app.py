@@ -30,7 +30,7 @@ with  st.expander("**Data Visualization**"):
 with st.sidebar:
   st.header("Input Features")
   # species= st.selectbox("Species",('Adelie' ,'Gentoo', 'Chinstrap'))
-  island= st.selectbox("Island",('Biscoe', 'Dream'))
+  island= st.selectbox("Island",('Torgersen' ,'Biscoe', 'Dream'))
   sex= st.selectbox("Sex",("male","female"))
   bill_length_mm= st.slider("Bill Length(mm)",df["bill_length_mm"].min(),df["bill_length_mm"].max(),df["bill_length_mm"].mean())
   bill_depth_mm= st.slider("Bill depth(mm)", df["bill_depth_mm"].min(), df["bill_depth_mm"].max(), df["bill_depth_mm"].min())
