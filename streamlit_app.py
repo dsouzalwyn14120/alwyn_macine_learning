@@ -53,8 +53,8 @@ encode_cols=["sex","island"]
 combined_df= pd.get_dummies(combined_df, prefix=encode_cols)
 input_row=combined_df[:1]
 from sklearn.preprocessing import LabelEncoder
-encoder= LabelEncoder()
-Y=encoder.fit_transform(Y)
+encode= LabelEncoder()
+Y=encode.fit_transform(Y)
 
 
 with st.expander("**New input feature**"):
