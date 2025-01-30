@@ -35,4 +35,4 @@ cols= df.columns
 cols
 
 for col in cols:
-  print(f"Column name:{col}\n\n {df[col].unique()}")
+  st.write(f"Column name:{col}\n\n {df[col].unique()}")
