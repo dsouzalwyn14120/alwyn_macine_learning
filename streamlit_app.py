@@ -37,7 +37,9 @@ with st.sidebar:
   flipper_length_mm= st.slider("Flipper length(mm)",df["flipper_length_mm"].min(), df["flipper_length_mm"].max(), df["flipper_length_mm"].mean())
 
 
-# cols= df.columns
+df["flipper_length_mm"]
+
+
 # cols
 
 # for col in cols:
