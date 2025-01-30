@@ -8,4 +8,6 @@ st.title('Machine learning app 🤖')
 
 st.info('in this app we build a Machine Learning model!') #this is used to print text, same as print()
 
-df
+with st.expander("data"):
+  st.write("**Raw Data")
+  df
