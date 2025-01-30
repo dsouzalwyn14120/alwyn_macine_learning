@@ -29,3 +29,7 @@ with  st.expander("**Data Visualization**"):
 
 with st.sidebar:
   st.header("Input Features")
+
+
+cols= df.columns
+cols
