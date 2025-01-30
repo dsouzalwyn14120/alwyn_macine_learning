@@ -56,5 +56,5 @@ with st.expander("**New input feature**"):
   combined_df
 
 encode_cols=["sex","island"]
-combined_df= pd.get_dummies(combined_df[encode_cols], prefix=encode)
+combined_df= pd.get_dummies(combined_df[encode_cols], prefix="encode")
 combined_df[:1]
