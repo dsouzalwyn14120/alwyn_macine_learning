@@ -60,5 +60,10 @@ with st.expander("**New input feature**"):
   st.write("input row encoded")
   input_row
   
+#encode Y
 
+from sklearn.preprocessing import LabelEncoder
+encoder= LabelEcoder()
+Y=encoder.fit_transform(Y)
+  Y
 
