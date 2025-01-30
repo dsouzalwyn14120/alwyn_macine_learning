@@ -32,7 +32,7 @@ with st.sidebar:
   # species= st.selectbox("Species",('Adelie' ,'Gentoo', 'Chinstrap'))
   island= st.selectbox("Island",('Torgersen' ,'Biscoe', 'Dream'))
   sex= st.selectbox("Sex",("male","female"))
-  bill_length_mm= st.slider("Bill Length(mm)",df["bill_length_mm"].min(),df["bill_length_mm"].max(),df["bill_length_mm"].mean())
+  bill_length_mm= st.slider("Bill Length(mm)",int(df["bill_length_mm"].min()),int(df["bill_length_mm"].max()),int(df["bill_length_mm"].mean()))
   bill_depth_mm= st.slider("Bill depth(mm)", df["bill_depth_mm"].min(), df["bill_depth_mm"].max(), df["bill_depth_mm"].min())
   flipper_length_mm= st.slider("Flipper length(mm)",df["flipper_length_mm"].min(), df["flipper_length_mm"].max(), int(df["flipper_length_mm"].mean()))
 
