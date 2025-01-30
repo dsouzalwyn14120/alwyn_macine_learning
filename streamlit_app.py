@@ -81,6 +81,8 @@ clf.fit(combined_df[1:],Y)
 
 #apply the model
 prediction= clf.predict(input_row)
-prediction
+with st.expander("**Results of ML model**"):
+  st.write("Prediction")
+  prediction
 
 
