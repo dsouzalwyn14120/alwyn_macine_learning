@@ -46,12 +46,12 @@ with st.sidebar:
   data={"island": island,"sex": sex,"bill_length_mm":bill_length_mm,"bill_depth_mm":bill_depth_mm,"flipper_length_mm":flipper_length_mm,
       "body_mass_g": body_mass_g}
   input_df= pd.DataFrame(data, index=[0])
-combined_df= pd.concat([input_df,X], axis=0)
+  combined_df= pd.concat([input_df,X], axis=0)
 #input_df
 
 with st.expander("**New input feature**"):
   st.write("input feature")
-  input_feature
+  input_df
   st.write("combined test dataframe")
   combined_df
 
