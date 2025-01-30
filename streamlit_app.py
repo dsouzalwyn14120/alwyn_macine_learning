@@ -48,13 +48,15 @@ with st.sidebar:
   input_df= pd.DataFrame(data, index=[0])
   combined_df= pd.concat([input_df,X], axis=0)
 #input_df
+  encode_cols=["sex","island"]
+  combined_df= pd.get_dummies(combined_df, prefix=encode_cols)
+  combined_df[:3]
 
 with st.expander("**New input feature**"):
   st.write("input feature")
   input_df
   st.write("combined test dataframe")
   combined_df
+  
 
-encode_cols=["sex","island"]
-combined_df= pd.get_dummies(combined_df, prefix=encode_cols)
-combined_df[:3]
+
